@@ -56,12 +56,11 @@ static const Layout layouts[] = {
   }
 
 /* commands */
-static const char *upvol[] = {"/usr/bin/pactl", "set-sink-volume", "0", "+5%",
-                              NULL};
-static const char *downvol[] = {"/usr/bin/pactl", "set-sink-volume", "0", "-5%",
+static const char *upvol[] = {"/usr/bin/amixer", "set", "Master", "5%+", NULL};
+static const char *downvol[] = {"/usr/bin/amixer", "set", "Master", "5%-",
                                 NULL};
-static const char *mutevol[] = {"/usr/bin/pactl", "set-sink-mute", "0",
-                                "toggle", NULL};
+static const char *mutevol[] = {"/usr/bin/amixer", "set", "Master", "toggle",
+                                NULL};
 static char dmenumon[2] =
     "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {
