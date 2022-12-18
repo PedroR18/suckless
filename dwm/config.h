@@ -23,7 +23,7 @@ static const char *tags[] = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
 static const Rule rules[] = {
     /* class      instance    title       tags mask     isfloating   monitor */
-    {"Firefox", NULL, NULL, 0, 0, -1},
+    {"mpv", NULL, NULL, 0, 1, -1},
 };
 
 /* layout(s) */
@@ -68,7 +68,7 @@ static const char *dmenucmd[] = {
     "-nf",       col_gray3, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
 static const char *termcmd[] = {"st", NULL};
 static const char *qutebrowser[] = {"qutebrowser", NULL};
-static const char *chromium[] = {"chromium", NULL};
+static const char *godot[] = {"godot", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
@@ -106,7 +106,7 @@ static const Key keys[] = {
     {MODKEY, XK_F10, spawn, {.v = mutevol}},
     {MODKEY, XK_F9, spawn, {.v = upvol}},
     {MODKEY, XK_F1, spawn, {.v = qutebrowser}},
-    {MODKEY, XK_F2, spawn, {.v = chromium}}};
+    {MODKEY, XK_F2, spawn, {.v = godot}}};
 
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle,
