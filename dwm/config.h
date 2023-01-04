@@ -68,6 +68,7 @@ static const char *dmenucmd[] = {
     "-nf",       col_gray3, "-sb",    col_cyan, "-sf",     col_gray4, NULL};
 static const char *termcmd[] = {"st", NULL};
 static const char *qutebrowser[] = {"qutebrowser", NULL};
+static const char *godot[] = {"/home/void/Projects/Godot", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
@@ -104,6 +105,7 @@ static const Key keys[] = {
     {MODKEY, XK_F8, spawn, {.v = downvol}},
     {MODKEY, XK_F10, spawn, {.v = mutevol}},
     {MODKEY, XK_F9, spawn, {.v = upvol}},
+    {MODKEY, XK_F2, spawn, {.v = godot}},
     {MODKEY, XK_F1, spawn, {.v = qutebrowser}}};
 
 /* button definitions */
